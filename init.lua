@@ -1,5 +1,6 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
+vim.cmd("autocmd BufRead,BufNewFile *.fg set filetype=fg")
 vim.api.nvim_set_keymap("v", "<C-/>", ":norm I//<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<U-/>", ":s!^//!!<CR>", { noremap = true, silent = true })
 -- Delete without yanking
